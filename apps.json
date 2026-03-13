@@ -1,5 +1,5 @@
 {
-	"$schema": "./apps.schema.json",
+	"$schema": "https://wvw.dev/apps.schema.json",
 	"store": {
 		"name": "Appétit",
 		"developer": "sametcn99",
