@@ -142,12 +142,10 @@
     html += `<div class="nav-section-label">Categories</div>`;
 
     const categories = [
-      { id: "macos", name: "macOS Apps", icon: icons.macos },
       { id: "web", name: "Web Apps", icon: icons.web },
       { id: "developer-tools", name: "Developer Tools", icon: icons["developer-tools"] },
       { id: "cli", name: "CLI Apps", icon: icons.cli },
       { id: "productivity", name: "Productivity", icon: icons.productivity },
-      { id: "games", name: "Games", icon: icons.games },
     ];
 
     categories.forEach((cat) => {
