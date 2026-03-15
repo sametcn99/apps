@@ -54,13 +54,16 @@
 			"longDescription": "Transform static Mermaid diagrams into interactive visualizations inside VitePress. The plugin adds zooming, panning, fullscreen mode, code copy, theme-aware rendering, and export options for documentation sites that need more than a static SVG.",
 			"icon": "https://vitepress-mermaid-renderer.vercel.app/vitepress-logo.png",
 			"iconEmoji": "🧜",
-			"category": ["developer-tools", "web"],
+			"category": [
+				"developer-tools",
+				"web"
+			],
 			"platform": "VitePress",
 			"price": "Free",
 			"github": "https://github.com/sametcn99/vitepress-mermaid-renderer",
 			"homepage": "https://vitepress-mermaid-renderer.vercel.app",
 			"language": "TypeScript",
-			"stars": 46,
+			"stars": 47,
 			"forks": 5,
 			"developer": "sametcn99",
 			"installCommand": "npm install vitepress-mermaid-renderer",
@@ -71,7 +74,9 @@
 				"Theme-aware rendering that follows light and dark mode",
 				"Export diagrams as SVG, PNG, or JPG"
 			],
-			"screenshots": ["https://opengraph.githubassets.com/1/sametcn99/vitepress-mermaid-renderer"]
+			"screenshots": [
+				"https://opengraph.githubassets.com/1/sametcn99/vitepress-mermaid-renderer"
+			]
 		},
 		{
 			"id": "htwind",
@@ -83,7 +88,10 @@
 			"iconEmoji": "🪟",
 			"developer": "sametcn99",
 			"downloadUrl": "https://github.com/sametcn99/HTWind/releases/latest",
-			"category": ["productivity", "developer-tools"],
+			"category": [
+				"productivity",
+				"developer-tools"
+			],
 			"platform": "Windows",
 			"price": "Free",
 			"github": "https://github.com/sametcn99/HTWind",
@@ -112,7 +120,10 @@
 			"longDescription": "Booking Calendar is a self-hosted PWA for managing appointments without handing scheduling data to a third party. It includes admin scheduling controls, public booking pages, cancellation flows, notifications, webhooks, and SQLite-backed persistence aimed at practical small-scale booking workflows.",
 			"icon": "https://booking-calendar-docs.vercel.app/android-chrome-512x512.png",
 			"iconEmoji": "📅",
-			"category": ["web", "productivity"],
+			"category": [
+				"web",
+				"productivity"
+			],
 			"platform": "Web",
 			"price": "Free",
 			"developer": "sametcn99",
@@ -128,7 +139,9 @@
 				"Email, web push, and webhook notification support",
 				"Installable PWA backed by self-hosted SQLite storage"
 			],
-			"screenshots": ["https://opengraph.githubassets.com/1/sametcn99/booking-calendar"]
+			"screenshots": [
+				"https://opengraph.githubassets.com/1/sametcn99/booking-calendar"
+			]
 		},
 		{
 			"id": "gpvblazor",
@@ -138,7 +151,10 @@
 			"longDescription": "GPVBlazor is a responsive GitHub profile viewer built with Blazor Server. It combines user search, repository browsing, gist viewing, README previews, star history charts, and profile statistics into a single interface for exploring open-source activity in more depth than the default GitHub profile pages.",
 			"icon": "https://gpv.sametcc.me/icons/icon512.png",
 			"iconEmoji": "📈",
-			"category": ["web", "developer-tools"],
+			"category": [
+				"web",
+				"developer-tools"
+			],
 			"platform": "Web",
 			"price": "Free",
 			"github": "https://github.com/sametcn99/GPVBlazor",
@@ -154,7 +170,9 @@
 				"README preview and repository filtering in one interface",
 				"Authentication options to extend GitHub API rate limits"
 			],
-			"screenshots": ["https://opengraph.githubassets.com/1/sametcn99/GPVBlazor"]
+			"screenshots": [
+				"https://opengraph.githubassets.com/1/sametcn99/GPVBlazor"
+			]
 		},
 		{
 			"id": "product-planning-copilot",
@@ -164,7 +182,10 @@
 			"longDescription": "product-planning-copilot is a forkable planning workspace for teams that want a consistent documentation-first process. It ships with project folder templates, requirement IDs, task and risk tracking conventions, reusable Copilot assets, and validation hooks that help planning artifacts stay structured as a project grows.",
 			"icon": null,
 			"iconEmoji": "🗂️",
-			"category": ["developer-tools", "productivity"],
+			"category": [
+				"developer-tools",
+				"productivity"
+			],
 			"platform": "Web",
 			"price": "Free",
 			"github": "https://github.com/sametcn99/product-planning-copilot",
@@ -181,7 +202,9 @@
 				"Reusable Copilot instructions, prompts, and skill assets",
 				"Deterministic validation hook for planning quality gates"
 			],
-			"screenshots": ["https://opengraph.githubassets.com/1/sametcn99/product-planning-copilot"]
+			"screenshots": [
+				"https://opengraph.githubassets.com/1/sametcn99/product-planning-copilot"
+			]
 		},
 		{
 			"id": "linkedin-hide-viewed-jobs",
@@ -191,7 +214,9 @@
 			"longDescription": "linkedin-hide-viewed-jobs is a userscript for LinkedIn Jobs focused on stability, multilingual detection, and safer scrolling. It can hide or highlight viewed listings, remembers preferences, supports LinkedIn SPA navigation, and includes guard logic to reduce the chance of rate-limit or bot-detection issues while browsing.",
 			"icon": null,
 			"iconEmoji": "💼",
-			"category": ["productivity"],
+			"category": [
+				"productivity"
+			],
 			"platform": "Browser",
 			"price": "Free",
 			"github": "https://github.com/sametcn99/linkedin-hide-viewed-jobs",
@@ -219,7 +244,10 @@
 			"longDescription": "Mermaid Viewer is a full web application for creating and sharing Mermaid diagrams with a polished editing workflow. It combines a Next.js frontend and NestJS backend so users can edit diagrams live, preview changes instantly, and share results through a purpose-built diagram interface rather than a raw code editor alone.",
 			"icon": "https://mermaid.sametcc.me/favicon.png",
 			"iconEmoji": "📊",
-			"category": ["web", "developer-tools"],
+			"category": [
+				"web",
+				"developer-tools"
+			],
 			"platform": "Web",
 			"price": "Free",
 			"github": "https://github.com/sametcn99/mermaid-viewer",
@@ -235,7 +263,9 @@
 				"Monorepo setup with Next.js frontend and NestJS backend",
 				"Designed for fast iteration on documentation and diagramming"
 			],
-			"screenshots": ["https://opengraph.githubassets.com/1/sametcn99/mermaid-viewer"]
+			"screenshots": [
+				"https://opengraph.githubassets.com/1/sametcn99/mermaid-viewer"
+			]
 		},
 		{
 			"id": "reddit-rss-api",
@@ -245,7 +275,10 @@
 			"longDescription": "Reddit RSS API is a lightweight Deno-powered HTTP service that turns subreddit RSS feeds into structured JSON responses. It supports merging multiple subreddits, filtering media posts, sorting or shuffling results, limiting output size, and rewriting Reddit links for legacy old.reddit.com views.",
 			"icon": "https://raw.githubusercontent.com/sametcn99/reddit-rss-api/refs/heads/main/src/assets/android-chrome-512x512.png",
 			"iconEmoji": "📰",
-			"category": ["web", "developer-tools"],
+			"category": [
+				"web",
+				"developer-tools"
+			],
 			"platform": "Web API",
 			"price": "Free",
 			"github": "https://github.com/sametcn99/reddit-rss-api",
@@ -261,7 +294,9 @@
 				"Sort chronologically or shuffle results with mixed mode",
 				"Serve CORS-friendly JSON from a zero-dependency Deno runtime"
 			],
-			"screenshots": ["https://opengraph.githubassets.com/1/sametcn99/reddit-rss-api"]
+			"screenshots": [
+				"https://opengraph.githubassets.com/1/sametcn99/reddit-rss-api"
+			]
 		},
 		{
 			"id": "env-protector",
@@ -271,7 +306,10 @@
 			"longDescription": "Env Protector is a VS Code extension built around a security-first workflow for `.env` files. Instead of masking secrets after a file opens, it intercepts access before rendering, offers a masked view, and lets you add, edit, or remove variables without exposing raw values during screen sharing or recordings.",
 			"icon": "https://raw.githubusercontent.com/sametcn99/env-protector/refs/heads/main/icon.png",
 			"iconEmoji": "🔐",
-			"category": ["developer-tools", "productivity"],
+			"category": [
+				"developer-tools",
+				"productivity"
+			],
 			"platform": "VS Code",
 			"price": "Free",
 			"github": "https://github.com/sametcn99/env-protector",
