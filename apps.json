@@ -69,7 +69,7 @@
 			"github": "https://github.com/sametcn99/vitepress-mermaid-renderer",
 			"homepage": "https://vitepress-mermaid-renderer.vercel.app",
 			"language": "TypeScript",
-			"stars": 48,
+			"stars": 47,
 			"forks": 4,
 			"developer": "sametcn99",
 			"installCommand": "npm install vitepress-mermaid-renderer",
@@ -103,7 +103,7 @@
 			"github": "https://github.com/sametcn99/HTWind",
 			"homepage": "https://htwind.vercel.app",
 			"language": "C#",
-			"stars": 4,
+			"stars": 5,
 			"forks": 0,
 			"requirements": "Windows desktop environment",
 			"features": [
