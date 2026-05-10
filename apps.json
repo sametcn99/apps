@@ -69,7 +69,7 @@
 			"github": "https://github.com/sametcn99/vitepress-mermaid-renderer",
 			"homepage": "https://vitepress-mermaid-renderer.vercel.app",
 			"language": "TypeScript",
-			"stars": 55,
+			"stars": 56,
 			"forks": 4,
 			"developer": "sametcn99",
 			"installCommand": "npm install vitepress-mermaid-renderer",
