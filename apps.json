@@ -231,7 +231,7 @@
 			"github": "https://github.com/sametcn99/linkedin-hide-viewed-jobs",
 			"homepage": "https://sametcn99.github.io/linkedin-hide-viewed-jobs/",
 			"language": "TypeScript",
-			"stars": 2,
+			"stars": 3,
 			"forks": 0,
 			"developer": "sametcn99",
 			"requirements": "Tampermonkey or Violentmonkey in a supported browser",
@@ -358,7 +358,7 @@
 			"github": "https://github.com/sametcn99/my-stars-atlas",
 			"homepage": "https://github.com/sametcn99/my-stars-atlas",
 			"language": "TypeScript",
-			"stars": 3,
+			"stars": 4,
 			"forks": 1,
 			"developer": "sametcn99",
 			"features": [
