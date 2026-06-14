@@ -70,7 +70,7 @@
 			"homepage": "https://vitepress-mermaid-renderer.vercel.app",
 			"language": "TypeScript",
 			"stars": 58,
-			"forks": 5,
+			"forks": 6,
 			"developer": "sametcn99",
 			"installCommand": "npm install vitepress-mermaid-renderer",
 			"requirements": "A VitePress project with Mermaid diagrams",
