@@ -389,7 +389,7 @@
 			"homepage": "https://gh-block-spam-accounts.vercel.app",
 			"language": "TypeScript",
 			"stars": 0,
-			"forks": 0,
+			"forks": 1,
 			"developer": "sametcn99",
 			"requirements": "Modern browser and a GitHub Personal Access Token",
 			"features": [
