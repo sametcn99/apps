@@ -293,7 +293,7 @@
 			"github": "https://github.com/sametcn99/reddit-rss-api",
 			"homepage": "https://reddit-rss-api.deno.dev",
 			"language": "TypeScript",
-			"stars": 2,
+			"stars": 3,
 			"forks": 1,
 			"developer": "sametcn99",
 			"requirements": "Any HTTP client or browser",
