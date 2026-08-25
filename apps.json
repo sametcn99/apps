@@ -371,8 +371,8 @@
 				"https://opengraph.githubassets.com/1/sametcn99/my-stars-atlas"
 			]
 		},
-                {
-                        "id": "gh-block-spam-accounts",
+		{
+			"id": "gh-block-spam-accounts",
 			"name": "GitHub Spam Account Blocker",
 			"subtitle": "Review and block suspicious GitHub accounts with an explainable workflow.",
 			"description": "A browser-only React app and reusable GitHub Action for detecting suspicious follower and following accounts before blocking them.",
@@ -398,100 +398,100 @@
 				"Block and unblock accounts through a controlled queue with progress logs",
 				"Reuse the bundled GitHub Action for scheduled dry runs or optional blocking"
 			],
-                        "screenshots": [
-                                "https://opengraph.githubassets.com/1/sametcn99/gh-block-spam-accounts"
-                        ]
-                },
-                {
-                        "id": "libredirect-mobile",
-                        "name": "LibRedirect Mobile",
-                        "subtitle": "Privacy-friendly link routing for Android.",
-                        "description": "An Android app that redirects links from popular services to privacy-friendly alternative frontends.",
-                        "longDescription": "LibRedirect Mobile intercepts links for services such as YouTube, Reddit, and X/Twitter, then routes them to privacy-friendly frontends such as Invidious and Redlib before opening them in the browser you choose.",
-                        "icon": null,
-                        "iconEmoji": "📱",
-                        "category": [
-                                "productivity",
-                                "developer-tools"
-                        ],
-                        "platform": "Android",
-                        "price": "Free",
-                        "github": "https://github.com/sametcn99/libredirect-mobile",
-                        "language": "Kotlin",
-                        "stars": 0,
-                        "forks": 0,
-                        "developer": "sametcn99",
-                        "requirements": "Android device",
-                        "features": [
-                                "Intercept links from supported services and route them to alternative frontends",
-                                "Privacy-focused alternatives for YouTube, Reddit, and X/Twitter",
-                                "Choose the browser used to open redirected links",
-                                "Native Android experience built with Kotlin"
-                        ],
-                        "screenshots": [
-                                "https://opengraph.githubassets.com/1/sametcn99/libredirect-mobile"
-                        ]
-                },
-                {
-                        "id": "libredirect-instances-list",
-                        "name": "LibRedirect Instances List",
-                        "subtitle": "Browse privacy-friendly frontend instances.",
-                        "description": "A client-side web app for discovering alternative frontend instances supported by LibRedirect.",
-                        "longDescription": "LibRedirect Instances List fetches and displays alternative frontend instances directly in the browser. It provides a simple, current view of available privacy-friendly services without requiring a backend.",
-                        "icon": null,
-                        "iconEmoji": "🛡️",
-                        "category": [
-                                "web",
-                                "developer-tools"
-                        ],
-                        "platform": "Web",
-                        "price": "Free",
-                        "github": "https://github.com/sametcn99/libredirect-instances-list",
-                        "homepage": "https://libredirect-instances-list.vercel.app",
-                        "language": "JavaScript",
-                        "stars": 2,
-                        "forks": 0,
-                        "developer": "sametcn99",
-                        "requirements": "Modern browser",
-                        "features": [
-                                "List alternative frontend instances in a searchable web interface",
-                                "Fetch instance data directly from the client",
-                                "Support privacy-focused alternatives across multiple services",
-                                "No account or server-side setup required"
-                        ],
-                        "screenshots": [
-                                "https://opengraph.githubassets.com/1/sametcn99/libredirect-instances-list"
-                        ]
-                },
-                {
-                        "id": "hiretea",
-                        "name": "Hiretea",
-                        "subtitle": "Run technical assessments end to end.",
-                        "description": "A self-hosted platform for creating and managing technical assessments.",
-                        "longDescription": "Hiretea is a self-hosted technical assessment platform designed to support the full assessment workflow, from preparing challenges to collecting and reviewing candidate submissions while keeping the deployment and data under your control.",
-                        "icon": null,
-                        "iconEmoji": "🧪",
-                        "category": [
-                                "web",
-                                "productivity"
-                        ],
-                        "platform": "Web",
-                        "price": "Free",
-                        "github": "https://github.com/sametcn99/hiretea",
-                        "language": "TypeScript",
-                        "stars": 0,
-                        "forks": 0,
-                        "developer": "sametcn99",
-                        "requirements": "Self-hosted deployment and a modern browser",
-                        "features": [
-                                "Self-hosted technical assessment workflow",
-                                "Create and manage assessment challenges",
-                                "Collect candidate submissions in one platform",
-                                "Keep assessment data under your own deployment"
-                        ],
-                        "screenshots": [
-                                "https://opengraph.githubassets.com/1/sametcn99/hiretea"
-                        ]
-                }
-        ]
+			"screenshots": [
+				"https://opengraph.githubassets.com/1/sametcn99/gh-block-spam-accounts"
+			]
+		},
+		{
+			"id": "libredirect-mobile",
+			"name": "LibRedirect Mobile",
+			"subtitle": "Privacy-friendly link routing for Android.",
+			"description": "An Android app that redirects links from popular services to privacy-friendly alternative frontends.",
+			"longDescription": "LibRedirect Mobile intercepts links for services such as YouTube, Reddit, and X/Twitter, then routes them to privacy-friendly frontends such as Invidious and Redlib before opening them in the browser you choose.",
+			"icon": null,
+			"iconEmoji": "📱",
+			"category": [
+				"productivity",
+				"developer-tools"
+			],
+			"platform": "Android",
+			"price": "Free",
+			"github": "https://github.com/sametcn99/libredirect-mobile",
+			"language": "Kotlin",
+			"stars": 0,
+			"forks": 0,
+			"developer": "sametcn99",
+			"requirements": "Android device",
+			"features": [
+				"Intercept links from supported services and route them to alternative frontends",
+				"Privacy-focused alternatives for YouTube, Reddit, and X/Twitter",
+				"Choose the browser used to open redirected links",
+				"Native Android experience built with Kotlin"
+			],
+			"screenshots": [
+				"https://opengraph.githubassets.com/1/sametcn99/libredirect-mobile"
+			]
+		},
+		{
+			"id": "libredirect-instances-list",
+			"name": "LibRedirect Instances List",
+			"subtitle": "Browse privacy-friendly frontend instances.",
+			"description": "A client-side web app for discovering alternative frontend instances supported by LibRedirect.",
+			"longDescription": "LibRedirect Instances List fetches and displays alternative frontend instances directly in the browser. It provides a simple, current view of available privacy-friendly services without requiring a backend.",
+			"icon": null,
+			"iconEmoji": "🛡️",
+			"category": [
+				"web",
+				"developer-tools"
+			],
+			"platform": "Web",
+			"price": "Free",
+			"github": "https://github.com/sametcn99/libredirect-instances-list",
+			"homepage": "https://libredirect-instances-list.vercel.app",
+			"language": "JavaScript",
+			"stars": 2,
+			"forks": 0,
+			"developer": "sametcn99",
+			"requirements": "Modern browser",
+			"features": [
+				"List alternative frontend instances in a searchable web interface",
+				"Fetch instance data directly from the client",
+				"Support privacy-focused alternatives across multiple services",
+				"No account or server-side setup required"
+			],
+			"screenshots": [
+				"https://opengraph.githubassets.com/1/sametcn99/libredirect-instances-list"
+			]
+		},
+		{
+			"id": "hiretea",
+			"name": "Hiretea",
+			"subtitle": "Run technical assessments end to end.",
+			"description": "A self-hosted platform for creating and managing technical assessments.",
+			"longDescription": "Hiretea is a self-hosted technical assessment platform designed to support the full assessment workflow, from preparing challenges to collecting and reviewing candidate submissions while keeping the deployment and data under your control.",
+			"icon": null,
+			"iconEmoji": "🧪",
+			"category": [
+				"web",
+				"productivity"
+			],
+			"platform": "Web",
+			"price": "Free",
+			"github": "https://github.com/sametcn99/hiretea",
+			"language": "TypeScript",
+			"stars": 0,
+			"forks": 0,
+			"developer": "sametcn99",
+			"requirements": "Self-hosted deployment and a modern browser",
+			"features": [
+				"Self-hosted technical assessment workflow",
+				"Create and manage assessment challenges",
+				"Collect candidate submissions in one platform",
+				"Keep assessment data under your own deployment"
+			],
+			"screenshots": [
+				"https://opengraph.githubassets.com/1/sametcn99/hiretea"
+			]
+		}
+	]
 }
