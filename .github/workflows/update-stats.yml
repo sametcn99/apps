@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   update:
@@ -24,13 +24,15 @@ jobs:
         run: bun scripts/update-stats.js
 
       - name: Regenerate sitemap.xml
+        env:
+          SITEMAP_UPDATE_LASTMOD: "false"
         run: bun scripts/generate-sitemap.js
 
-      - name: Commit and push if changed
-        run: |
-          git diff --quiet apps.json sitemap.xml && exit 0
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add apps.json sitemap.xml
-          git commit -m "chore: update GitHub stats and sitemap"
-          git push
+      - name: Upload generated files
+        uses: actions/upload-artifact@v4
+        with:
+          name: updated-stats-and-sitemap
+          path: |
+            apps.json
+            sitemap.xml
+          if-no-files-found: error

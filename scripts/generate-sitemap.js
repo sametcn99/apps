@@ -14,11 +14,24 @@ function escapeXml(value) {
         .replace(/'/g, "&apos;");
 }
 
+function readPreviousLastmods(sitemap) {
+    const lastmods = new Map();
+    const urlBlocks = sitemap.matchAll(/<url\b[^>]*>([\s\S]*?)<\/url>/g);
+
+    for (const [, block] of urlBlocks) {
+        const loc = block.match(/<loc>([\s\S]*?)<\/loc>/)?.[1];
+        const lastmod = block.match(/<lastmod>([\s\S]*?)<\/lastmod>/)?.[1];
+        if (loc && lastmod) lastmods.set(loc.trim(), lastmod.trim());
+    }
+
+    return lastmods;
+}
+
 function toIsoDate(value = new Date()) {
     return value.toISOString().slice(0, 10);
 }
 
-function buildUrlSet(data) {
+function buildUrlSet(data, previousLastmods, updateAllLastmods) {
     const baseUrl = normalizeBaseUrl(data.store?.url);
     const today = toIsoDate();
     const urls = [];
@@ -27,7 +40,12 @@ function buildUrlSet(data) {
     function addUrl(loc, changefreq, priority) {
         if (!loc || seen.has(loc)) return;
         seen.add(loc);
-        urls.push({ loc, lastmod: today, changefreq, priority });
+        urls.push({
+            loc,
+            lastmod: updateAllLastmods ? today : previousLastmods.get(loc) || today,
+            changefreq,
+            priority,
+        });
     }
 
     addUrl(`${baseUrl}/`, "daily", "1.0");
@@ -61,9 +79,11 @@ function buildSitemapXml(entries) {
 async function main() {
     const raw = await Bun.file(appsJsonUrl).text();
     const data = JSON.parse(raw);
-    const entries = buildUrlSet(data);
+    const previousSitemap = await Bun.file(sitemapUrl).text().catch(() => "");
+    const updateAllLastmods = Bun.env.SITEMAP_UPDATE_LASTMOD === "true";
+    const entries = buildUrlSet(data, readPreviousLastmods(previousSitemap), updateAllLastmods);
     const xml = buildSitemapXml(entries);
-    await Bun.write(sitemapUrl, xml);
+    if (xml !== previousSitemap) await Bun.write(sitemapUrl, xml);
     console.log(`Wrote ${entries.length} sitemap entries to ${sitemapUrl.pathname}`);
 }
 

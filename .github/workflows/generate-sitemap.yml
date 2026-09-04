@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   sitemap:
@@ -19,19 +19,40 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
 
+      - name: Detect meaningful sitemap changes
+        id: changes
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          EVENT_BEFORE: ${{ github.event.before }}
+          EVENT_SHA: ${{ github.sha }}
+        run: |
+          update_lastmod=false
+          if [[ "$EVENT_NAME" == "push" && -n "$EVENT_BEFORE" && "$EVENT_BEFORE" != "0000000000000000000000000000000000000000" ]] && \
+             ! git diff --quiet "$EVENT_BEFORE" "$EVENT_SHA" -- apps.json scripts/generate-sitemap.js; then
+            meaningful_diff=$(git diff "$EVENT_BEFORE" "$EVENT_SHA" -- apps.json scripts/generate-sitemap.js | \
+              grep -E '^[+-][^+-]' | \
+              grep -Ev '^[+-][[:space:]]*"(stars|forks)"[[:space:]]*:' || true)
+            if [[ -n "$meaningful_diff" ]]; then
+              update_lastmod=true
+            fi
+          fi
+          echo "update-lastmod=$update_lastmod" >> "$GITHUB_OUTPUT"
+
       - name: Generate sitemap.xml
+        env:
+          SITEMAP_UPDATE_LASTMOD: ${{ steps.changes.outputs.update-lastmod }}
         run: bun scripts/generate-sitemap.js
 
-      - name: Commit and push if changed
-        run: |
-          git diff --quiet sitemap.xml && exit 0
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add sitemap.xml
-          git commit -m "chore: regenerate sitemap"
-          git push
+      - name: Upload generated sitemap
+        uses: actions/upload-artifact@v4
+        with:
+          name: sitemap
+          path: sitemap.xml
+          if-no-files-found: error
